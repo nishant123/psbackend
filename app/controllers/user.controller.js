@@ -13,6 +13,7 @@ exports.create = (req, res) => {
   const user = new Userdb({
     name: req.body.name,
     email: req.body.email,
+    password: req.body.password,
     role:req.body.role,
     phone:req.body.phone,
     address:req.body.address,
