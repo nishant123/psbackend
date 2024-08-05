@@ -68,7 +68,8 @@ exports.login = (req, res) => {
         else {          
           if(data.password=== password) {
             console.log('password matching');
-            res.send(data);
+            res.status(200).send({ data: data });
+
           } else {
             res.status(404).send({ message: "Not found user " + email });
           }
