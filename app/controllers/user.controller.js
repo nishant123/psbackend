@@ -3,6 +3,7 @@ const Userdb = db.user;
 
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
+  console.log(1);
   // Validate request
   if (!req.body.name) {
     res.status(400).send({ message: "User can not be empty!" });

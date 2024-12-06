@@ -2,14 +2,16 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
-var corsOptions = {
-  origin: "http://localhost:4200",
-  methods:['GET','POST','PUT','DELETE'],
-  allowedHeaders:['Content-type']
-};
 
-app.use(cors(corsOptions));
+
+// app.use(cors());
+// var corsOptions = {
+//   origin: "http://localhost:4200",
+//   methods:['GET','POST','PUT','DELETE'],
+//   allowedHeaders:['Content-type']
+// };
+
+// app.use(cors(corsOptions));
 
 // parse requests of content-type - application/json
 app.use(express.json());
